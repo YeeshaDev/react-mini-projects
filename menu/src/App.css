@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300&family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+h1{
+  margin-top: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #3f3c3c;
+}
+
+.underline {
+  width: 60px;
+  height: 4px;
+  background-color: #629b06;
+  margin: 5px auto;
+}
+
+.menu--btn {
+  border: none;
+  margin: 30px 8px 8px 8px;
+  font-size: 0.8rem;
+  font-family: 'Fraunces', sans-serif;
+  text-transform: capitalize;
+  color: #629b06;
+  background-color: #f0f8ff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  width: 70px;
+  height: 40px;
+  border-radius: 10px;
+  
+}
+
+.menu--btn:hover {
+ 
+  background-color: #629b06;
+  color: #f0f8ff;
+  transition: all 0.3s;
+}
+.menu--items {
+  display: grid;
+  padding: 1rem 1.5rem;
+}
+
+.menuItems {
+  max-width: 25rem;
+  margin-top: 1rem;
+}
+.menu--img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 4px solid #629b06;
+  border-radius: 7px;
+  margin: 10px;
+  display: block;
+}
+
+.title--flex {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px auto;
+  white-space: nowrap;
+  border-bottom: 0.7px dotted grey;
+  
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.price {
+color: #629b06;
+}
+
+.desc {
+  max-width: 400px;
+ line-height: 1.2;
+}
+
+@media screen and (min-width:320px) {
+  .menu--btn {
+    margin: 30px 5px 7px 5px;
+    width: 65px;
+  }
+  
+}
+
+@media screen and (min-width:990px) {
+  .menuItems {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+.menu--items {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+}
+
+.menu--btn {
+  margin: 30px 15px 8px 15px;
+}
+}
+@media screen and (min-width:1200px) {
+  .menu--btn {
+    margin: 30px 10px 7px 10px;
+    width: 80px;
+    font-size: 1rem;
+  }
+}

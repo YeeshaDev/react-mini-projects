@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300&family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Poppins', sans-serif;
+  background-color:#f1f5f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #34344e;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: hsl(205, 78%, 60%);;
+  margin: 0 auto;
+}
+
+
+main {
+  max-width: 620px;
+}
+.tour--cards {
+  padding: 1.5rem 2rem;
+  margin: 1.7rem;
+  background-color: #fff;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1),
+              5px 8px 5px rgba(0, 0, 0, 0.2)
+}
+
+.tour--cards:hover {
+  transform: scale(0.97);
+  transition: all 0.5s ease-in-out;
+}
+
+.tour--cards img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.tour--flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.price {
+  color:#3c96db;
+  background-color: #f1f5f8;
+  padding: 8px;
+  border-radius: 10px;
+  letter-spacing: 1.2px;
+}
+
+.info {
+font-family: 'Open Sans', sans-serif;
+font-size: 0.8rem;
+color: #787880;
+line-height: 1.2;
+letter-spacing: 1px;
+font-weight: 500;
+}
+.name {
+  color: #34344e;
+  letter-spacing: 1.2px;
+}
+
+.info--btn {
+  background-color: #f1f5f8;
+  color: #3c96db;
+  border: none;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.tour--btn {
+  display: block;
+  border:none;
+  outline: none;
+  background-color: #1a86da;
+  color:#fff;
+  padding: 10px;
+  margin: 1rem auto;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  font-family:'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tour--btn:hover {
+  background-color: #e62929;
+}
+
+.refresh-info {
+  text-align: center;
+}
+.refresh-info h2,.loading{
+  font-size: 1.8rem;
+  color: #34344e;
+  margin-top: 3rem;
+
+}
+
+.refresh--btn {
+  border: none;
+  width: 150px;
+  height: 50px;
+  background-color: #3c96db;
+  color: #ffff;
+  border-radius: 10px;
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-family:'Roboto', sans-serif;
+}
+
+@media screen and (max-width:400px){
+ .name,.price {
+  font-size:0.8rem;
+  letter-spacing: 0.8px;
+ } 
+
+ .info {
+  font-size: 0.68rem;
+ }
+
+ .tour--cards img {
+  height: 15rem;
+ }
+
+ .loading {
+  font-size: 1.5rem;
+ }
+}

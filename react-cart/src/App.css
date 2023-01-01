@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #a6c3dd;
+}
+.App {
+  padding: 1rem;
+  color: #2c2b2b;
+}
+header h2 {
+  font-size: 1.7rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+.cart--items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart--data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item--image {
+  width: 5rem;
+  object-fit: cover;
+}
+
+.remove-btn {
+  border: none;
+  background-color: #fff;
+  padding: 0.6rem;
+  margin-top: 10px;
+  color: #4098e6;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.amount-btn {
+  border: none;
+  width: 30px;
+  margin: 10px;
+  background-color: #a6c3dd;
+  color: #4098e6;
+  cursor: pointer;
+}
+
+.amount-btn svg {
+  fill: #4098e6;
+}
+
+.amount {
+  text-align: center;
+  margin: 0;
+}
+
+.cart--total h4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  text-transform: capitalize;
+}
+
+.clear--btn {
+  display: block;
+  border: none;
+  color: #d31818;
+  margin:2rem auto;
+  font-size: 1.3rem;
+  border: 3px solid #d31818;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.clear--btn:hover {
+  background-color:#d31818;
+  color: #fff;
+}
+.navbar {
+  background-color:#1436cf;
+  color: #fff;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 1rem;
+}
+
+.nav-container {
+  position: relative;
+}
+.nav-container svg {
+  width: 2rem;
+  fill:#4098e6;
+}
+
+.amount-container p {
+  position: absolute;
+  top:-0.8rem;
+  right: -0.5rem;
+  color: #4098e6;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.loading {
+  color:#2c2b2b;
+  font-size: 3rem;
+  margin: 3rem 2rem;
+  text-align: center;
+}
+ hr {
+  border: none;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 1rem;
+ }
