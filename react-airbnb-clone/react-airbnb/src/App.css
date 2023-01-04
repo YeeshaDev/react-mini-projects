@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.container {
+    margin:  0 auto;
+    width: 100%;
+    max-width: 1200px;
+
+}
+nav {
+    box-shadow: 0 2px 7px #dbd5d5;
+    padding: 1.5rem 2rem;
+}
+
+.logo {
+    margin-top: 1rem;
+    margin-left: 2
+    rem;
+}
+
+.hero {
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-img {
+    display: grid;
+    width: 100%;
+    margin: 50px auto;
+    padding: 1rem;
+}
+
+.hero h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 25px 45px;
+}
+
+.hero p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #222222;
+    margin: 20px 40px;
+}
+.card-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-wrap: nowrap;
+    gap: 10px;
+    max-width: 960px;
+    overflow-x: auto;
+
+}
+
+.card {
+    position: relative;
+    padding: 1rem;
+    
+   }
+
+.card-badge{
+    position: absolute;
+    top: 40px;
+     left: 37px;
+    background-color: #fff;
+    padding: 6px 8px;
+    font-size: 12px;
+}
+
+.card-stats {
+    margin: 6px;
+}
+
+.star {
+    width: 1rem;
+}
+
+.swim-img {
+    padding: 1rem;
+    width:200px;
+    height: 250px;
+    margin: auto;
+
+
+}
+
+.grey {
+    color: #918e98;
+    margin-left: 3px;
+}
+.kira {
+    color: #222222;
+    margin: 7px;
+}
+
+.bold {
+font-weight: 700;
+margin-left: 10px;
+}
+
+.bold span {
+    font-weight: 400;
+    color: #918e98;
+}
+
+@media screen and (max-width:1440px) {
+    .container{
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    .card-list {
+        max-width: 1440px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .card-list {
+        max-width: 600px;
+    }
+}
+@media screen and (max-width:425px) {
+    .card-list {
+        max-width: 400px;
+    }
+}

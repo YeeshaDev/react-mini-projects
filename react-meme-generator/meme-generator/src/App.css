@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300&family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+
+main {
+    padding: 36px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    height: 100%;
+    margin-right: 6px;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.form input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+}
+
+.meme-btn {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.memes-img {
+    display: grid;
+    place-items: center;
+    width: 60%;
+    border-radius: 3px;
+    margin: auto;
+}
+.meme {
+    position: relative;
+}
+
+.meme-text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
+}
