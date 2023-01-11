@@ -1,0 +1,111 @@
+.about-content{
+    margin: 70px auto 0;
+   
+}
+.about-wrapper .about{
+    font-family: 'Roboto',sans-serif;
+font-size: 12rem;
+color:#3a3939;
+font-weight: 900;
+letter-spacing: 7px;
+margin-left: 3rem;
+}
+.my-self{
+    width: 320px; 
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: block;
+    text-align: center;
+    position: relative;
+    top: -120px;
+    left: -110px;
+    color:var(--primary-color1);
+}
+.my-self::before{
+    content: '';
+    width: 350px;
+    height: 2px;
+    background: var(--primary-color1);
+    position: absolute;
+    bottom: 22px;
+    left: -380px;
+    
+}
+.my-self::after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color1);
+    position: absolute;
+    left: -380px;
+    bottom: 22px;
+    border-radius: 50%;
+    
+}  
+.my-self::after{
+    animation: ball 5s ease-in-out infinite alternate;
+    -webkit-animation: ball 5s ease-in-out infinite alternate;
+    -o-animation: ball 5s ease-in-out infinite alternate;
+}
+@keyframes ball{
+    0%{
+        transform: translateX(0);  
+    }
+    28%{
+       z-index: -999; 
+    }
+    100%{
+        transform: translateX(325px);
+    } 
+}
+
+.about-wrapper p {
+    padding-bottom: 3rem;
+    width: 500px;
+    margin: auto;
+}
+@media screen and (max-width:800px){
+    .about-wrapper .about{
+        font-family: 'Roboto',sans-serif;
+    font-size: 9rem;
+    color:#3a3939;
+    font-weight: 900;
+    letter-spacing: 7px;
+    }
+    .my-self{
+        width: 320px; 
+        margin: auto;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: 5px;
+        display: block;
+        text-align: center;
+        position: relative;
+        top: -100px;
+        left: 110px;
+        color:var(--primary-color1);
+    }
+    .my-self::before{
+        content: '';
+        width: 350px;
+        height: 2px;
+        background: var(--primary-color1);
+        position: absolute;
+        bottom: 0;
+        left: -300px;
+        
+    }
+    .my-self::after{
+        content: '';
+        width: 40px;
+        height: 40px;
+        background: var(--primary-color1);
+        position: absolute;
+        left: -300px;
+        bottom: 0;
+        border-radius: 50%;
+        
+    }  
+}

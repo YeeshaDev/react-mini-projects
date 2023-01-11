@@ -1,0 +1,130 @@
+.project-content {
+    width: 100%;
+    
+    
+}
+
+.work {
+font-family: 'Roboto',sans-serif;
+font-size: 10rem;
+color:#3a3939;
+font-weight: 900;
+letter-spacing: 7px;
+margin: 2rem 0 0 3rem;
+}
+
+.my-projects {
+    width: 320px; 
+    margin: auto;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    display: block;
+    text-align: center;
+    top: -120px;
+    left: -60px;
+    position: relative;
+    color:var(--primary-color1);
+}
+.project-wrapper {   
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ width: 80%;
+ margin: auto;
+}
+
+.project2 {
+    flex-direction: row-reverse;
+}
+.project-details h4, .project-details h1 {
+    width: 400px;
+    margin-left: 2rem;
+}
+.project-links {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 1rem;
+    background-color: var(--primary-color1);
+    padding: 0.5rem;
+    width: 150px;
+    height: 50px;
+}
+
+.project-info {
+    position: relative;
+    
+}
+
+.project-img {
+    width: 400px;
+    margin-top: 2rem;
+    
+}
+
+@media screen and (max-width:800px) {
+    .project-wrapper {   
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+        flex-direction: column-reverse;
+       }
+
+       .work {
+        font-family: 'Roboto',sans-serif;
+        font-size: 7rem;
+        color:#3a3939;
+        font-weight: 900;
+        letter-spacing: 7px;
+        margin: 2rem 0 0 3rem;
+        }
+        
+        .my-projects {
+            width: 320px; 
+            margin: auto;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: capitalize;
+            letter-spacing: 5px;
+            display: block;
+            text-align: center;
+            top: -80px;
+            left: 120px;
+            position: relative;
+            color:var(--primary-color1);
+        }
+       
+       
+       .project-details h4,.project-details h1 {
+           width: 400px;
+           margin-left: 1rem;
+           margin-top: 1rem;
+       }
+       .project-links {
+           display: inline-flex;
+           align-items: center;
+           justify-content: center;
+           margin: 2rem 1rem;
+           background-color: var(--primary-color1);
+           padding: 0.5rem;
+           width: 150px;
+           height: 50px;
+       }
+       .project-info {
+           position: relative;
+           
+       }
+       
+       .project-img {
+           width: 400px;
+           margin-top: 2rem;
+           
+       } 
+       
+       
+}
+

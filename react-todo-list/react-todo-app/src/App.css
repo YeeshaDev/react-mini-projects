@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@400;600&family=Barlow:wght@600&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;600;700&family=Josefin+Sans:wght@300&family=Jost:wght@300;400;500&family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&family=Raleway:wght@400;700&family=Red+Hat+Text:wght@700&family=Roboto:wght@400;700&family=Rubik:wght@300;400;500&family=Space+Mono:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #2f2e41;
+}
+
+.container {
+  text-align: center;
+  max-width: 1220px;
+}
+
+.todo--img{
+  width: 50%;
+}
+
+.top--text{
+  font-family: 'Fraunces', serif;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  
+}
+
+.bottom--text {
+  width: 500px;
+  margin:2rem auto;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.top--btn,.bottom--btn{
+  position: relative;
+  display: block;
+  margin: 1rem auto;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  background-color:#6c63ff;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  width:50%;
+  height: 50px;
+  cursor: pointer;
+}
+
+.top--btn:hover,.bottom--btn:hover{
+  background-color: #2f2e41;
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+.icon {
+  position: absolute;
+  top: 25%;
+  right: 27%;
+  font-size: 1.5rem;
+  animation: icon 1s linear infinite;
+  
+}
+
+@keyframes icon {
+  0%,100%{
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(10px,0);
+  }
+}
+
+/* Sign up and Log in page starts here!!*/
+
+.wrapper {
+  padding: 1rem;
+}
+.sign--heading {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-family: 'Fraunces', serif;
+}
+.sign--sub {
+  margin-top: 1rem;
+}
+
+.sign--img{
+  width: 50%;
+}
+
+.sign-form {
+  margin-top: 2rem;
+  padding: 1rem;
+
+}
+
+.sign-form input {
+  display: block;
+ margin: 1rem 5rem;
+  width: 70%;
+  height: 50px;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #2f2e41;
+
+}
+
+.error p {
+  display: block;
+  color: red;
+font-size: 0.8rem;
+font-weight: 600;
+font-family: 'Fraunces', sans-serif;
+padding: 8px;
+letter-spacing: 1px;
+ 
+}
+
+
+.sign--btn{
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  background-color:#6c63ff;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  width:30%;
+  height: 50px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.sign--btn:hover {
+  background-color: #2f2e41;
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+.link--text {
+  display: inline-block;
+text-decoration: none;
+color: #6c63ff;
+margin-left: 10px;
+}
+
+.link--text:hover {
+  color: #5a56c5;
+  transform: scale(0.9);
+  transition: all 0.5s ease-in;
+  font-size: 1rem;
+}
+
+.forget--btn {
+  display: block;
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: 600;
+  font-size: 1rem;
+
+}
+.login--btn {
+display: block;
+border: none;
+font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  border: none;
+  background-color:#6c63ff;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  width:40%;
+  height: 50px;
+  cursor: pointer;
+  margin: 1.5rem auto;
+  text-decoration: none;
+}
+.login--btn:hover {
+  background-color: #2f2e41;
+  transform: scale(0.95);
+  transition: all 0.5s ease-in-out;
+}
+
+/* The todo list main page starts here*/
+
+.todo--wrapper h1{
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.time  {
+  margin-right: 12rem;
+  margin-top: 3rem;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+.time p {
+  margin-right: 1rem;
+}
+
+.todo--form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin: auto;
+}
+
+.todo--input{
+  margin: 1rem;
+  height: 40px;
+  width: 50%;
+  padding: 5px;
+  outline: none;
+  border: 1px solid #2f2e41;
+}
+
+.btn{
+  width: 100px;
+  height: 40px;
+  background-color: #6c63ff;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.todo--btn {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.todo--btn button {
+  border: none;
+  background-color:transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  transition: all 0.3s;
+  position: relative;
+  color: #2f2e41;
+  cursor: pointer;
+}
+
+.todo--btn button:hover {
+  color: #868397;
+
+}
+.todo--btn button::before{
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 2px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #6c63ff;
+	border-bottom-color: #6c63ff;
+	transform: scale(0.1, 1);
+}
+
+.todo--btn button:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.todo--btn button::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.todo--btn button:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
+
+.update,.cancel {
+  width: 80px;
+  margin: 10px;
+}
+
+.cancel {
+  background-color: #2f2e41;
+}
+.box-content{
+  position: relative;
+  background-color: #6c63ff;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  height: 50px;
+  margin: 20px;
+}
+.box-content.active{
+  height: 70px;
+  transition: all 0.2s ease;
+  padding: 1.5rem;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+.box .done {
+text-decoration: line-through;
+
+}
+
+.task--num {
+  border:2px solid #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  margin-right: 20px;
+
+}
+
+.ellipse-icon {
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.todo {
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+.icon1{
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-size: 1.2rem;
+}
+
+.icon2{
+  position: absolute;
+  bottom: 0px;
+  right: 55px;
+  font-size: 1.3rem;
+}
+
+

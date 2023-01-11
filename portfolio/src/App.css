@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=La+Belle+Aurore&family=Lato:wght@300;400&family=Montserrat:wght@200;300;400;500&family=Noto+Sans:wght@100;200;300;400&family=Open+Sans:wght@300;400;500;600&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@300;400;500&display=swap');
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --bg-color:#1d1d1d;
+  --primary-color1:#0cbea7;
+  --primary-color2:#e6e0e0;
+  --primary-color3:#3a3939;
+  --clr-white:#fff;
+  --text-font:'Open Sans',sans-serif;
+  --padding: 1rem;
+  --transition:all 0.3s linear;
+}
+
+button {
+  border:none;
+  background-color: transparent;
+}
+
+hr {
+  border: none;
+  background-color: #ada9a9;
+  height: 0.1px;
+}
+a{
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color2);
+}
+
+body {
+  background-color: var(--bg-color);
+  color:var(--clr-white);
+  font-family: var(--text-font);
+}
